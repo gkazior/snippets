@@ -1,5 +1,7 @@
 ## git tutorial
 
+To do:
+
    mkdir sql-snippets
    cd sql-snippets
    git init
