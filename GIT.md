@@ -64,3 +64,34 @@ then commit the file.
  	#define MNAME "UPDATEFDB"
  	#define USE_FUNCTION_INSTEAD_OF_GLOBAL_VARIABLES /* with static compilation global variables from other units doesn't work in exec files */
 
+To fix the evil:
+	find -name '*.c*' -print -exec sed -i.bak 's/\/Tytan60\/TSrc\-7\.0\/DPS\/SRC\//\/Tytan60\/TSrc\/DPS\/SRC\//g' {} \;
+
+However you may get again:
+	--- a/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c
+	+++ b/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c
+	@@ -1,4 +1,4 @@
+	-/*$Header:: /Tytan60/TSrc/DPS/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c 8 1.0.8 09.06.08 16:00 JASTRZEB                        $*/
+	+/*$Header:: /Tytan60/TSrc/DPS/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c 8 1.0.8 09.06.08 16:00 JASTRZEB                            $*/
+ 	#define MREV  "$Revision:: 8        $"
+ 	#include "cmpdat.hxx"
+
+## more commands
+	git log --pretty=format:'%h : %s' --topo-order --graph
+	git reset --hard HEAD
+	git log --stat
+	git log --pretty=oneline
+	git log --pretty=format:'%h : %s' --graph
+	git tag stable-1 1b2e1d63ff
+	git revert HEAD
+	git revert HEAD^
+
+## patch
+	git format-patch -1
+	git am 0001-manual-backport-of-dev-changes.patch
+	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
+## stashing
+
+## gc
+
+## git fsck
