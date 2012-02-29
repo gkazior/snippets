@@ -16,7 +16,7 @@ use
 	git config core.autocrlf false
 [more info on](http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf)
 
-## Very fast, init, checkout, branch
+## Fast init, checkout, branch
 
 
 	time git init
@@ -24,7 +24,6 @@ use
 	real    0m0.003s
 	user    0m0.001s
 	sys     0m0.001s
-
 
 	time git add *
 	real    0m14.977s
@@ -36,3 +35,32 @@ use
 	real    0m0.433s
 	user    0m0.276s
 	sys     0m0.081s
+
+	time git branch "dev/branches/TYTVI-12123_sqliteInOm"
+	real    0m0.002s
+	user    0m0.001s
+	sys     0m0.001s
+
+
+## ignore .depend
+Create a .gitignore file with content:
+	cat .gitignore
+	.depend
+
+then commit the file.
+
+
+## header is evil (not in git only)
+	diff --git a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp b/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
+	index 3aa4ba8..43ef7f2 100644
+	--- a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
+	+++ b/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
+	@@ -1,5 +1,5 @@
+	-/* $Header:: /Tytan60/TSrc/DPS/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp 14 1.0.14 14.09.10 13:56 KJACEK                                      $ */
+	-#define MHDR  "$Header:: /Tytan60/TSrc/DPS/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp 14 1.0.14 14.09.10 13:56 KJACEK                                      $"
+	+/* $Header:: /Tytan60/TSrc-7.0/DPS/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp 14 1.0.14 14.09.10 13:56 KJACEK                                  $ */
+	+#define MHDR  "$Header:: /Tytan60/TSrc-7.0/DPS/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp 14 1.0.14 14.09.10 13:56 KJACEK                                  $"
+ 	#define MREV  "$Revision:: 14     $"
+ 	#define MNAME "UPDATEFDB"
+ 	#define USE_FUNCTION_INSTEAD_OF_GLOBAL_VARIABLES /* with static compilation global variables from other units doesn't work in exec files */
+
