@@ -73,8 +73,8 @@ However you may get again:
 	@@ -1,4 +1,4 @@
 	-/*$Header:: /Tytan60/TSrc/DPS/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c 8 1.0.8 09.06.08 16:00 JASTRZEB                        $*/
 	+/*$Header:: /Tytan60/TSrc/DPS/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c 8 1.0.8 09.06.08 16:00 JASTRZEB                            $*/
- 	#define MREV  "$Revision:: 8        $"
- 	#include "cmpdat.hxx"
+	#define MREV  "$Revision:: 8        $"
+	#include "cmpdat.hxx"
 
 ## more commands
 	git log --pretty=format:'%h : %s' --topo-order --graph
