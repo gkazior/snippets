@@ -2,12 +2,12 @@
 
 ## Documentation
 
-[Start here](http://git-scm.com/documentation) http://git-scm.com/documentation
-[Git reference](http://gitref.org/)
-[Pro Git book](http://progit.org/book/)
-[Everyday git](http://schacon.github.com/git/everyday.html)
-[Git for svn users](http://git-scm.com/course/svn.html)
-[Git magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
+*[Start here](http://git-scm.com/documentation)
+*[Git reference](http://gitref.org/)
+*[Pro Git book](http://progit.org/book/)
+*[Everyday git](http://schacon.github.com/git/everyday.html)
+*[Git for svn users](http://git-scm.com/course/svn.html)
+*[Git magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 
 ##To start a project
 
