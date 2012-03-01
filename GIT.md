@@ -116,8 +116,8 @@ Or a lot of changes to compare and merge.
 
 ## To make a change log
 
-	git log --pretty=format:'%s' --graph         >> CHANGELOG.MD
-	git log --pretty=format:'%s' --graph || uniq >> CHANGELOG.MD
+	git log --pretty=format:'%s' --graph         >> CHANGELOG.md
+	git log --pretty=format:'%s' --graph |  uniq >> CHANGELOG.md
 
 ## Revert
 
