@@ -43,6 +43,7 @@ By default git will replace EOL according to current env. To disable it call the
 
 ## ignored files .depend
 Create a .gitignore file with content:
+
 	cat .gitignore
 	.depend
 
