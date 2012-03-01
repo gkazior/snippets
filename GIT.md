@@ -49,6 +49,19 @@ Create a .gitignore file with content:
 
 then commit the file.
 
+## Undo last commit
+
+Suppose the last commit was x.c
+
+	# The following sequence changes nothing
+	git reset --soft HEAD^
+	git commit -m "noting has changed"
+
+	# The following sequence changes nothing
+	git reset HEAD^
+	git add x.c
+	git commit -m "noting has changed"
+
 
 ## Header is evil (not in git only)
 	diff --git a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp b/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
