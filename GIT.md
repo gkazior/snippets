@@ -65,6 +65,7 @@ then commit the file.
  	#define USE_FUNCTION_INSTEAD_OF_GLOBAL_VARIABLES /* with static compilation global variables from other units doesn't work in exec files */
 
 To fix the evil:
+
 	find -name '*.c*' -print -exec sed -i.bak 's/\/Tytan60\/TSrc\-7\.0\/DPS\/SRC\//\/Tytan60\/TSrc\/DPS\/SRC\//g' {} \;
 
 However you may get again:
