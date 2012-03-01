@@ -76,6 +76,8 @@ However you may get again:
 	#define MREV  "$Revision:: 8        $"
 	#include "cmpdat.hxx"
 
+Or a lot of changes to compare and merge.
+
 ## more commands
 	git log --pretty=format:'%h : %s' --topo-order --graph
 	git reset --hard HEAD
@@ -90,6 +92,7 @@ However you may get again:
 	git format-patch -1
 	git am 0001-manual-backport-of-dev-changes.patch
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
+
 ## stashing
 
 ## gc
