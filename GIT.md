@@ -69,6 +69,7 @@ To fix the evil:
 	find -name '*.c*' -print -exec sed -i.bak 's/\/Tytan60\/TSrc\-7\.0\/DPS\/SRC\//\/Tytan60\/TSrc\/DPS\/SRC\//g' {} \;
 
 However you may get again:
+
 	--- a/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c
 	+++ b/SRC/PLUGINS/COMMON/CMPDAT/cmpdat.c
 	@@ -1,4 +1,4 @@
