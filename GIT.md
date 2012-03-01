@@ -1,6 +1,6 @@
 # git tutorial
 
-##start a project
+##To start a project
 
 	mkdir snippets
 	cd snippets
@@ -11,13 +11,12 @@
 	git remote add origin git@github.com:gkazior/snippets.git
 	git push -u origin master
 
-## crlf
-use
+## Crlf MS vs UNIX
+By default git will replace EOL according to current env. To disable it call the following:
 	git config core.autocrlf false
-[more info on](http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf)
+[more info here](http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf)
 
-## Fast init, checkout, branch
-
+## Git is fase: init, checkout, branch
 
 	time git init
 	Initialized empty Git repository in /big/home/kazior/DPS-dev/.git/
@@ -42,7 +41,7 @@ use
 	sys     0m0.001s
 
 
-## ignore .depend
+## ignored files .depend
 Create a .gitignore file with content:
 	cat .gitignore
 	.depend
@@ -50,7 +49,7 @@ Create a .gitignore file with content:
 then commit the file.
 
 
-## header is evil (not in git only)
+## Header is evil (not in git only)
 	diff --git a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp b/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
 	index 3aa4ba8..43ef7f2 100644
 	--- a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
@@ -80,7 +79,7 @@ However you may get again:
 
 Or a lot of changes to compare and merge.
 
-## more commands
+## More commands
 	git log --pretty=format:'%h : %s' --topo-order --graph
 	git reset --hard HEAD
 	git log --stat
@@ -90,9 +89,12 @@ Or a lot of changes to compare and merge.
 	git revert HEAD
 	git revert HEAD^
 
-## patch
+## To patch
+Prepare a patch
 	git format-patch -1
+Apply it:
 	git am 0001-manual-backport-of-dev-changes.patch
+or apply with standarad patch command:
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
 
 ## stashing
