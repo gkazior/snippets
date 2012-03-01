@@ -113,6 +113,14 @@ Or a lot of changes to compare and merge.
 	git log --pretty=oneline
 	git log --pretty=format:'%h : %s' --graph
 	git tag stable-1 1b2e1d63ff
+
+## To make a change log
+
+	git log --pretty=format:'%s' --graph         >> CHANGELOG.MD
+	git log --pretty=format:'%s' --graph || uniq >> CHANGELOG.MD
+
+## Revert
+
 	git revert HEAD
 	git revert HEAD^
 
