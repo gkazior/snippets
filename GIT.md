@@ -11,12 +11,14 @@
 	git remote add origin git@github.com:gkazior/snippets.git
 	git push -u origin master
 
-## Crlf MS vs UNIX
+## Crlf: Which is better MS or UNIX?
 By default git will replace EOL according to current env. To disable it call the following:
+
 	git config core.autocrlf false
+
 [more info here](http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf)
 
-## Git is fase: init, checkout, branch
+## Git is fast: init, checkout, branch
 
 	time git init
 	Initialized empty Git repository in /big/home/kazior/DPS-dev/.git/
@@ -42,6 +44,7 @@ By default git will replace EOL according to current env. To disable it call the
 
 
 ## ignored files .depend
+
 Create a .gitignore file with content:
 
 	cat .gitignore
@@ -64,6 +67,7 @@ Suppose the last commit was x.c
 
 
 ## Header is evil (not in git only)
+
 	diff --git a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp b/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
 	index 3aa4ba8..43ef7f2 100644
 	--- a/SRC/TOOLS/UPDATEFDB/UpdateFDB.cpp
@@ -104,11 +108,17 @@ Or a lot of changes to compare and merge.
 	git revert HEAD^
 
 ## To patch
+
 Prepare a patch
+
 	git format-patch -1
+
 Apply it:
+
 	git am 0001-manual-backport-of-dev-changes.patch
+
 or apply with standarad patch command:
+
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
 
 ## stashing
