@@ -152,10 +152,9 @@ or apply with standard patch command:
 
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
 
-## stashing
+## Other stuff
 
-## gc
-
-## git fsck
+	To verify the connectivity and validity of the objects in the database
+	git fsck
 
 
