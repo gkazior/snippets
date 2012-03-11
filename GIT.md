@@ -67,12 +67,12 @@ Suppose the last commit was x.c
 
 	# The following sequence changes nothing
 	git reset --soft HEAD^
-	git commit -m "noting has changed"
+	git commit -m "nothing has changed"
 
 	# The following sequence changes nothing
 	git reset HEAD^
 	git add x.c
-	git commit -m "noting has changed"
+	git commit -m "nothing has changed"
 
 
 ## Header is evil (not in git only)
@@ -124,6 +124,20 @@ Or a lot of changes to compare and merge.
 	git revert HEAD
 	git revert HEAD^
 
+## clone svn repo
+
+To checkout the last version (do not have history, commits, etc)
+
+	git svn init https://pckazior:8443/svn/sandbox/tu-prolog/trunk
+
+To migrate the repository this might be useful.
+
+	git svn clone http://svn.foo.org/project -T trunk -b branches -t tags
+	git svn clone http://svn.foo.org/project/trunk
+	git svn clone --stdlayout https://pckazior:8443/svn/sandbox/joratest
+
+See also the https://github.com/nirvdrum/svn2git
+
 ## To patch
 
 Prepare a patch
@@ -134,7 +148,7 @@ Apply it:
 
 	git am 0001-manual-backport-of-dev-changes.patch
 
-or apply with standarad patch command:
+or apply with standard patch command:
 
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
 
