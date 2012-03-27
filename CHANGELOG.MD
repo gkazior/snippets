@@ -1,6 +1,6 @@
 Change log:
 =======================
-
+* spell checking
 * how to make a change log
 * documentation links
 * undo
