@@ -24,3 +24,78 @@
         .quit
         .exit
 
+## no DECODE or NVL, but IFNULL and CASE
+
+.header on
+
+CREATE TABLE testTable (id NUMBER);
+INSERT INTO testTable (Id) VALUES (1);
+INSERT INTO testTable (Id) VALUES (2);
+COMMIT;
+
+SELECT id
+       ,(SELECT id
+           FROM testTable v2
+          WHERE v2.id = v.id)                  id2
+       ,IFNULL(v.id, -1)                       n1
+       ,IFNULL(NULL, v.id)                     n2
+       ,CASE ID
+          WHEN 1 THEN 'first case'
+          WHEN 2 THEN 'second case'
+          ELSE 'Unknown case'
+        END                                     CaseSample
+      ,'EOT'                                    eot
+ FROM testTable v
+WHERE Id IN (1, 2);
+
+produces
+
+id|id2|n1|n2|CaseSample|eot
+1|1|1|1|first case|EOT
+2|2|2|2|second case|EOT
+
+## no SYSDATE, but datetime('NOW')
+
+SELECT datetime('now') from testTable;
+
+
+## Types of columns. Is there sqlite_describe_column like OCIDescribeAny?
+
+Possible candidates:
+typeof - SQL function
+sqlite3_column_type           - C api
+sqlite3_table_column_metadata - C api
+pragma table_info(testTable)
+SELECT name, sql FROM sqlite_master WHERE type='table' AND name = 'testTable';
+
+There is no sqlite_describe_column which can provide to a host language the type which is required when you want to set the buffer of simple host type like integer, float, char[200].
+Column can contain any value. This is a feature not a bug.
+SELECT id
+       ,(SELECT id
+           FROM testTable v2
+          WHERE v2.id = v.id)                  id2
+       ,IFNULL(v.id, -1)                       n1
+       ,IFNULL(NULL, v.id)                     n2
+       ,CASE ID
+          WHEN 1 THEN 'first case'
+          WHEN 2 THEN 'second case'
+          ELSE 'Unknown case'
+        END                                     CaseSample
+      ,typeof(id)                               TypeOfId
+      ,typeof(CASE ID
+                WHEN 1 THEN 'first case'
+                WHEN 2 THEN 'second case'
+                ELSE 'Unknown case'
+              END asdfaaa)                      TypeOfCase
+      ,typeof(CASE ID
+                WHEN 1 THEN NULL
+                WHEN 2 THEN 'second case'
+                ELSE 'Unknown case'
+              END)                             TypeOfCaseWithNull
+      ,'EOT'                                    eot
+ FROM testTable v
+WHERE Id IN (1, 2);
+
+Possible to use pragma, however it does not give the type of
+pragma table_info(testTable);
+
