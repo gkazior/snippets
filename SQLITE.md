@@ -58,6 +58,10 @@ produces
 
         SELECT datetime('now') from testTable;
 
+## no ROWNUM for limiting rows, but LIMIT
+
+        SELECT id from testTable LIMIT 3;
+
 
 ## Types of columns. Is there sqlite_describe_column like OCIDescribeAny?
 
