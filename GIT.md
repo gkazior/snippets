@@ -8,7 +8,7 @@
 * [Everyday git](http://schacon.github.com/git/everyday.html)
 * [Git for svn users](http://git-scm.com/course/svn.html)
 * [Git magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
-* [I know it is mercurial, but still nice to read the read the comparison](http://hginit.com/00.html)
+* [Subversion re-education (I know it is mercurial, but still nice to read the read the comparison)](http://hginit.com/00.html)
 
 
 ##To start a project
