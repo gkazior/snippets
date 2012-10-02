@@ -14,6 +14,11 @@
 * [Sqlite Hammer](http://www.squidoo.com/sqlitehammer)
 * [Squido tutorial](http://www.squidoo.com/sqlitetutorial)
 
+## Tools
+
+* [Tools](http://sb2.info/commercial-and-freeware-sqlite-tools-list-2/)
+* [SQLiteman] (http://sqliteman.com/)
+
 ## sqlite3 commands and scripts
 
         .help

@@ -124,6 +124,25 @@ Or a lot of changes to compare and merge.
 	git revert HEAD
 	git revert HEAD^
 
+
+## to work with fork
+
+        fork a repo ex. https://github.com/katsuyan/speak.js
+        clone it
+        add remote for pulls
+        git remote add katsuyan https://github.com/katsuyan/speak.js
+
+        git push origin master
+        # Pushes commits to your remote repo stored on GitHub
+
+        git fetch upstream
+        # Fetches any new changes from the original repo
+
+        git merge upstream/master
+        # Merges any changes fetched into your working files
+
+
+
 ## clone svn repo
 
 To checkout the last version (do not have history, commits, etc)
