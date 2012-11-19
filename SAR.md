@@ -1,28 +1,36 @@
 # Sar
 
 ## collecting
-sar -o test_p_all.sar 1 10
-sar -o test_p_all.sar 1 10  > /dev/null 2>&1 &
+
+  sar -o test_p_all.sar 1 10
+
+  sar -o test_p_all.sar 1 10  > /dev/null 2>&1 &
 
 ## paging
-sar -B     -f test_p_all.sar
+
+  sar -B     -f test_p_all.sar
 
 ## processors
-sar -P ALL -f test_p_all.sar
-sar -q     -f test_p_all.sar
 
-## memory
-sar -r     -f test_p_all.sar
+  sar -P ALL -f test_p_all.sar
+  
+  sar -q     -f test_p_all.sar
 
-## swap
-sar -S     -f test_p_all.sar
+## swap and memory
+
+  sar -r     -f test_p_all.sar
 
 ## devices
-sar -d     -f test_p_all.sar
+
+  sar -d     -f test_p_all.sar
 
 ## network
-sar -n ALL -f test_p_all.sar
-sar -n DEV -f test_p_all.sar
+
+  sar -n ALL -f test_p_all.sar
+
+  sar -n DEV -f test_p_all.sar
+
 
 # References
-http://linux.die.net/man/1/sar
+
+  http://linux.die.net/man/1/sar
