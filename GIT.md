@@ -9,7 +9,7 @@
 * [Git for svn users](http://git-scm.com/course/svn.html)
 * [Git magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 * [Subversion re-education (I know it is mercurial, but still nice to read the comparison)](http://hginit.com/00.html)
-
+* [branching by gitguys] (http://www.gitguys.com/topics/tracking-branches-and-remote-tracking-branches/)
 
 ##To start a project
 
