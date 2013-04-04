@@ -137,6 +137,9 @@ Or a lot of changes to compare and merge.
         git push origin master
         # Pushes commits to your remote repo stored on GitHub
 
+        git push --tags
+        # Pushes tags created by me
+
         git fetch upstream
         # Fetches any new changes from the original repo
 
