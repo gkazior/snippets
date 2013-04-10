@@ -121,9 +121,16 @@ Or a lot of changes to compare and merge.
 	git log --pretty=format:'%s' --graph         >> CHANGELOG.md
 	git log --pretty=format:'%s' --graph |  uniq >> CHANGELOG.md
 
-## To search through history
+## To search through whole history (sources)
 
-        git grep -e theRegexpToMatchByGrep $(git rev-list --all)
+        git grep -e <theRegexpToMatchByGrep> $(git rev-list --all)
+        git grep -e <theRegexpToMatchByGrep> $(git rev-list <revFrom>..<revTo>)
+        git grep -e <theRegexpToMatchByGrep> [--or] -e <theRegexpToMatchByGrep2>
+        [See here] (http://stackoverflow.com/questions/2928584/how-to-grep-search-committed-code-in-the-git-history)
+
+## To search through commit messages
+
+        git log -G <theRegexpToMatchByGrep>
 
 ## Revert
 
