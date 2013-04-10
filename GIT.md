@@ -121,6 +121,10 @@ Or a lot of changes to compare and merge.
 	git log --pretty=format:'%s' --graph         >> CHANGELOG.md
 	git log --pretty=format:'%s' --graph |  uniq >> CHANGELOG.md
 
+## To search through history
+
+        git grep -e theRegexpToMatchByGrep $(git rev-list --all)
+
 ## Revert
 
 	git revert HEAD
