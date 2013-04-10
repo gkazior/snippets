@@ -10,6 +10,8 @@
 * [Git magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 * [Subversion re-education (I know it is mercurial, but still nice to read the comparison)](http://hginit.com/00.html)
 * [branching by gitguys] (http://www.gitguys.com/topics/tracking-branches-and-remote-tracking-branches/)
+* [nice page on git svn] (http://trac.parrot.org/parrot/wiki/git-svn-tutorial)
+* [another git svn page] (http://git-scm.com/book/en/Git-and-Other-Systems-Git-and-Subversion)
 
 ##To start a project
 
