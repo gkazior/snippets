@@ -134,6 +134,39 @@ Or a lot of changes to compare and merge.
 
         git log -G <theRegexpToMatchByGrep>
 
+
+## Interactive rebase
+
+        git branch feature1    # work in branch
+        git checkout master    # back to master
+        git merge feature1     # merge changes
+        git rebase -i HEAD~4   # possibly remove commits in the middle
+        git branch -d feature1 # remove the branch when you do not need it
+
+## Merge into one commit
+
+        # after https://makandracards.com/makandra/527-squash-several-git-commits-into-a-single-commit
+        # Switch to the master branch and make sure you are up to date.
+        git checkout master
+        git fetch # this may be necessary (depending on your git config) to receive updates on origin/master
+        git pull
+
+        # Merge the feature branch into the master branch.
+        git merge feature_branch
+
+        # Reset the master branch to origin's state.
+        git reset origin/master
+
+        # Git now considers all changes as unstaged changes.
+        # We can add these changes as one commit.
+        # Adding . will also add untracked files.
+        git add --all
+        git commit
+
+       # or simply
+       git checkout master
+       git merge --squash branch -m "super commit"
+
 ## Revert
 
 	git revert HEAD

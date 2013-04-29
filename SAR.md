@@ -1,5 +1,10 @@
 # Sar
 
+## ksar - nice tool for analisys of performance data
+
+   http://ksar.atomique.net/
+   Gui is not very pretty, but the soft is great
+
 ## collecting
 
   sar -o test_p_all.sar 1 10
@@ -13,7 +18,7 @@
 ## processors
 
   sar -P ALL -f test_p_all.sar
-  
+
   sar -q     -f test_p_all.sar
 
 ## swap and memory
