@@ -20,3 +20,10 @@
 
         #On unix
         MAVEN_OPTS="-Xmx2000m -XX:MaxPermSize=512m"
+
+## Working with shanpshots?
+
+        Try -U flag which updates shanpshots you have in your local repo. 
+
+        mvn -U install
+        
