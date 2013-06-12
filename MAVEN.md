@@ -27,6 +27,7 @@
         Try -U flag which updates shanpshots you have in your local repo.
 
         mvn -U install
+        mvn -U clean install -DskipTests
 
 
 ## Why not to read the command line help?
