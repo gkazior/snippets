@@ -3,6 +3,7 @@
 ## Documentation
 
 * [Start here](http://git-scm.com/documentation)
+* [Try git](http://try.github.com/)
 * [Git reference](http://gitref.org/)
 * [Pro Git book](http://progit.org/book/)
 * [Everyday git](http://schacon.github.com/git/everyday.html)
