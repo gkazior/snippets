@@ -2,3 +2,7 @@ sparta
 this
 huffman
 accessors
+Jira
+SQLite
+Oracle
+H2
