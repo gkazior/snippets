@@ -14,25 +14,24 @@
 ## Nice to look at
 
 *  [Coursera] (http://www.coursera.org/)
-
-** [Course: Functional Programming Principles in Scala] (http://www.coursera.org/course/progfun)
-** [Course: Principles of Reactive Programming ]        (http://www.coursera.org/course/reactive)
+  * [Course: Functional Programming Principles in Scala] (http://www.coursera.org/course/progfun)
+  * [Course: Principles of Reactive Programming ]        (http://www.coursera.org/course/reactive)
 
 ## enum in scala
 
-  sealed case class State(name: String)
-  object begin extends State("begin")
-  object inTheMiddle extends State("in the middle")
-  object end extends State("end")
+    sealed case class State(name: String)
+    object begin extends State("begin")
+    object inTheMiddle extends State("in the middle")
+    object end extends State("end")
 
-  object processor {
-    def processState(state: State) {
-      state match {
-        case begin       => println(s"Great!    state: $begin")
-        case end         => println(s"Was nice! state: $end")
-        case inTheMiddle => println(s"Working!  state: $inTheMiddle")
+    object processor {
+      def processState(state: State) {
+        state match {
+          case begin       => println(s"Great!    state: $begin")
+          case end         => println(s"Was nice! state: $end")
+          case inTheMiddle => println(s"Working!  state: $inTheMiddle")
+        }
       }
     }
-  }
 
-  processor.processState(begin)                   //> Great!    state: State(begin)
+    processor.processState(begin)                   //> Great!    state: State(begin)
