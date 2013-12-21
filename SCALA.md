@@ -20,11 +20,19 @@
 
 ## enum in scala
 
-        sealed case class State(name: String)
-        object begin       = State("begin")
-        object inTheMiddle = State("in the middle")
-        object end         = State("end")
+  sealed case class State(name: String)
+  object begin extends State("begin")
+  object inTheMiddle extends State("in the middle")
+  object end extends State("end")
 
-        object Processor {
-           def processState
-        }
+  object processor {
+    def processState(state: State) {
+      state match {
+        case begin       => println(s"Great!    state: $begin")
+        case end         => println(s"Was nice! state: $end")
+        case inTheMiddle => println(s"Working!  state: $inTheMiddle")
+      }
+    }
+  }
+
+  processor.processState(begin)                   //> Great!    state: State(begin)
