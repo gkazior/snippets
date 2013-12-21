@@ -6,3 +6,9 @@ Jira
 SQLite
 Oracle
 H2
+grantee
+unsubscribe
+cancellable
+deregisters
+stacktrace
+telcoldap
