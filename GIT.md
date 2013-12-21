@@ -5,6 +5,7 @@
 * [Start here](http://git-scm.com/documentation)
 * [Try git](http://try.github.com/)
 * [Git reference](http://gitref.org/)
+* [Cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
 * [Pro Git book](http://progit.org/book/)
 * [Everyday git](http://schacon.github.com/git/everyday.html)
 * [Git for svn users](http://git-scm.com/course/svn.html)
