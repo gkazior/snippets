@@ -20,9 +20,9 @@
 ## enum in scala
 
     sealed case class State(name: String)
-    object begin extends State("begin")
+    object begin       extends State("begin")
     object inTheMiddle extends State("in the middle")
-    object end extends State("end")
+    object end         extends State("end")
 
     object processor {
       def processState(state: State) {
