@@ -20,11 +20,13 @@ G = fun(X) -> timer:sleep(10), io:format("~p~n", [X]) end.
 
 ## help and manuals
 
-Getting started http://www.erlang.org/doc/getting_started/users_guide.html
-Mnesia          http://www.erlang.org/doc/man/mnesia.html
-documents       http://www.erlang.org/doc.html
-Users guide     http://www.erlang.org/doc/apps/tools/users_guide.html
-Tools           http://www.erlang.org/doc/apps/tools/index.html
+    What        | Link 
+  ------------- | -------------
+Getting started | http://www.erlang.org/doc/getting_started/users_guide.html
+Mnesia          | http://www.erlang.org/doc/man/mnesia.html
+documents       | http://www.erlang.org/doc.html
+Users guide     | http://www.erlang.org/doc/apps/tools/users_guide.html
+Tools           | http://www.erlang.org/doc/apps/tools/index.html
 
 ## Books
 
