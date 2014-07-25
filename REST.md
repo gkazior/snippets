@@ -1,3 +1,16 @@
+# Testing
+
+http://frisbyjs.com/
+
+
+## Testing with curl
+
+        curl -s -i  \
+           -H "Accept:application/json" \
+           -X GET \
+           http://localhost/test 
+
+
 # Links
 
 ## General
