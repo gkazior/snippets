@@ -19,6 +19,8 @@
 ## Play documentation
 
 *  [Newest version docs](http://www.playframework.com/documentation)
+*  [ScoopIt](http://www.scoop.it/t/playframework)
+*  [Send email] (http://blog.knoldus.com/2014/03/15/adding-an-email-sending-functionality-in-play-using-scala/)
 
 ## Nice to look at
 
