@@ -1,5 +1,6 @@
 # My snippets
 
-This repository contains rather useless snippets.
+This repository contains snippets.
 
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+* [Github markdown docs] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Nice sequence diagram] (http://www.plantuml.com/plantuml/form)
