@@ -10,7 +10,20 @@
 
         rm -f the_pipe
 
+# Linux distro
 
-## links
+  Determine what distribution I have:
+  more /etc/issue
+
+  Install using yum
+  sudo yum install ${module}
+
+  Install using apt-get
+  sudo apt-get install ${module}
+
+  Download missing packages manually
+  For Cent Os manually download from  http://mirror.centos.org/centos/6/os/x86_64/Packages/
+
+# links
 
 * [Error codes] http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status
