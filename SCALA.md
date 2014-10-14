@@ -24,9 +24,9 @@
 
 ## Nice to look at
 
-*  [Coursera] (http://www.coursera.org/)
-  * [Course: Functional Programming Principles in Scala] (http://www.coursera.org/course/progfun)
-  * [Course: Principles of Reactive Programming ]        (http://www.coursera.org/course/reactive)
+* [Coursera] (http://www.coursera.org/)
+ * [Course: Functional Programming Principles in Scala] (http://www.coursera.org/course/progfun)
+ * [Course: Principles of Reactive Programming ]        (http://www.coursera.org/course/reactive)
 
 ## enum in scala
 
@@ -44,7 +44,6 @@
         }
       }
     }
-
     processor.processState(begin)                   //> Great!    state: State(begin)
 
 
@@ -54,31 +53,31 @@
 
 ### simple example
 
-  val optionalValue = Some("Hello")
 
-  optionalValue match {
-    case None        => println("Nothing in the value")
-    case Some(value) => println(s"I have found [$value]")
-  }
+    val optionalValue = Some("Hello")
+    optionalValue match {
+     case None        => println("Nothing in the value")
+     case Some(value) => println(s"I have found [$value]")
+    }
+
 
 ### Simple case class
 
-  sealed trait Breed
-  object terrier extends Breed
-  object spaniel extends Breed
 
-  case class Dog(name: String, breed: Breed)
-
-  val myDog = Dog("spider", terrier)
-
-  def whenYouSee(dog: Dog) = {
-    dog match {
-      case myDog           =>
-      case Dog("spider", )
+    sealed trait Breed
+    object terrier extends Breed
+    object spaniel extends Breed
+    case class Dog(name: String, breed: Breed)
+    val myDog = Dog("spider", terrier)
+    def whenYouSee(dog: Dog) = {
+      dog match {
+        case myDog           =>
+        case Dog("spider", )
+      }
     }
-  }
 
 ### When I need a dog
 
-  a @ (MyFirst | MySecond)
-case x if f1(x)
+
+    a @ (MyFirst | MySecond)
+    case x if f1(x)
