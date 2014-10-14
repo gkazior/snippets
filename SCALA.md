@@ -68,16 +68,15 @@
     object terrier extends Breed
     object spaniel extends Breed
     case class Dog(name: String, breed: Breed)
-    val myDog = Dog("spider", terrier)
+    val myDog = Dog("spider", terrier)                
+    
     def whenYouSee(dog: Dog) = {
       dog match {
-        case myDog           =>
-        case Dog("spider", )
+        case myDog            => "Oh my dog"
+        case Dog("spider", _) => "Spider"
       }
-    }
+    }                                                 
+    // myDog is not a value but a matched variable
+    val whatIsee = whenYouSee(Dog("sharik", terrier))//> whatIsee  : String = Oh my dog
 
-### When I need a dog
 
-
-    a @ (MyFirst | MySecond)
-    case x if f1(x)
