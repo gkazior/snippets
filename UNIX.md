@@ -24,6 +24,13 @@
         # Download missing packages manually
         For Cent Os manually download from  http://mirror.centos.org/centos/6/os/x86_64/Packages/
 
+# System and application monitoring
+
+* http://newrelic.com/
+* http://www.zabbix.com/
+* http://www.cacti.net/
+* http://www.nagios.org/
+
 # links
 
 * [Error codes] http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status
