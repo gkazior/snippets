@@ -24,6 +24,14 @@
         # Download missing packages manually
         For Cent Os manually download from  http://mirror.centos.org/centos/6/os/x86_64/Packages/
 
+
+# Nice oneliners
+
+|  How                | What |
+|---------------------|---------------------|
+|  netstat -tulpn     | Who is using my tcp/ip port  |
+|  ps -fu kazior      | Show me my processes (user is kazior)|
+
 # links
 
 * [Error codes] http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status
