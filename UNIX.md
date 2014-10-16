@@ -24,12 +24,20 @@
         # Download missing packages manually
         For Cent Os manually download from  http://mirror.centos.org/centos/6/os/x86_64/Packages/
 
+
 # System and application monitoring
 
 * http://newrelic.com/
 * http://www.zabbix.com/
 * http://www.cacti.net/
 * http://www.nagios.org/
+
+# Nice oneliners
+
+|  How                | What |
+|---------------------|---------------------|
+|  netstat -tulpn     | Who is using my tcp/ip port  |
+|  ps -fu kazior      | Show me my processes (user is kazior)|
 
 # links
 

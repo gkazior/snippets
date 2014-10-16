@@ -11,11 +11,13 @@
 * [Git for svn users](http://git-scm.com/course/svn.html)
 * [Git magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 * [Subversion re-education (I know it is mercurial, but still nice to read the comparison)](http://hginit.com/00.html)
-* [branching by gitguys] (http://www.gitguys.com/topics/tracking-branches-and-remote-tracking-branches/)
-* [nice page on git svn] (http://trac.parrot.org/parrot/wiki/git-svn-tutorial)
-* [another git svn page] (http://git-scm.com/book/en/Git-and-Other-Systems-Git-and-Subversion)
-* [Git wiki] (https://git.wiki.kernel.org/index.php/Installation)
-
+* [branching by gitguys]  (http://www.gitguys.com/topics/tracking-branches-and-remote-tracking-branches/)
+* [nice page on git svn]  (http://trac.parrot.org/parrot/wiki/git-svn-tutorial)
+* [another git svn page]  (http://git-scm.com/book/en/Git-and-Other-Systems-Git-and-Subversion)
+* [Git wiki]              (https://git.wiki.kernel.org/index.php/Installation)
+* [Git real game]         (http://gitreal.codeschool.com/levels/1)
+* [Learn git branching]   (http://pcottle.github.io/learnGitBranching/)
+ 
 ## Installation
 
 [See help@github](https://help.github.com/articles/set-up-git)
