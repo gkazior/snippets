@@ -41,4 +41,5 @@
 
 # links
 
-* [Error codes] http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status
+* [Error codes]  http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status
+* [BAsh hackers] http://wiki.bash-hackers.org/start
