@@ -132,6 +132,12 @@ Or a lot of changes to compare and merge.
 	git log --pretty=format:'%s' --graph         >> CHANGELOG.md
 	git log --pretty=format:'%s' --graph |  uniq >> CHANGELOG.md
 
+## To see the date wise tag history
+	
+	git log --tags --simplify-by-decoration --pretty="format:%ai %d"
+	git log --date-order --graph --tags --simplify-by-decoration --pretty=format:'%ai %h %d'
+	git log --decorate=full --all --pretty=format:'%h %d %s %cr %ae' --abbrev-commit|grep 'refs/tags'
+
 ## To search through whole history (sources)
 
         git grep -e <theRegexpToMatchByGrep> $(git rev-list --all)
