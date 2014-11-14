@@ -243,6 +243,11 @@ or apply with standard patch command:
 
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
 
+## empty folders
+
+	Git cannot keep empty folders, if you still want to keep the folders, put the .gitkeep empty file into the folder.
+	touch .gitkeep 
+
 ## Other stuff
 
 	To verify the connectivity and validity of the objects in the database
