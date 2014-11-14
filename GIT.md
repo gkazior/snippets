@@ -207,6 +207,12 @@ Or a lot of changes to compare and merge.
         git merge upstream/master
         # Merges any changes fetched into your working files
 
+## to work with feature branch
+	
+	git checkout master                # checkout the base version
+	git branch -b TICKET-123_TheName   # create a branch and checkout
+	# do the work, test, and finally
+	git push origin TICKET-123_TheName # push the feature branch to perform continues integration 
 
 
 ## clone svn repo
