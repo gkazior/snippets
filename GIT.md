@@ -214,6 +214,10 @@ Or a lot of changes to compare and merge.
 	# do the work, test, and finally
 	git push origin TICKET-123_TheName # push the feature branch to perform continues integration 
 
+## push multiple branches at once
+
+	# pushes all branches and updates tracking information
+	git push --all origin -u
 
 ## clone svn repo
 
