@@ -187,6 +187,16 @@ Or a lot of changes to compare and merge.
 	git revert HEAD
 	git revert HEAD^
 
+## scripting with git - get some interesting values
+
+	git rev-parse HEAD                 # print the current hash (long)
+	last_commit=$(git rev-parse HEAD)  # the same - set the variable
+	
+	git rev-parse --short=8 HEAD       # print the current hash (only 8 chars)
+	git symbolic-ref -q --short HEAD   # print the current branch name
+	
+	git rev-parse HEAD~2               # print the hash of two commits back
+	git reset --hard HEAD~2            # reset - go back two commits back
 
 ## to work with fork
 
