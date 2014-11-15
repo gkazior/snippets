@@ -259,7 +259,8 @@ or apply with standard patch command:
 
 ## empty folders
 
-	Git cannot keep empty folders, if you still want to keep the folders, put the .gitkeep empty file into the folder.
+Git cannot keep empty folders, if you still want to keep the folders, put the .gitkeep empty file into the folder.
+	
 	touch .gitkeep 
 
 ## Other stuff
