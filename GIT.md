@@ -120,12 +120,17 @@ However you may get again:
 Or a lot of changes to compare and merge.
 
 ## More commands
+
 	git log --pretty=format:'%h : %s' --topo-order --graph
 	git reset --hard HEAD
 	git log --stat
 	git log --pretty=oneline
 	git log --pretty=format:'%h : %s' --graph
 	git tag stable-1 1b2e1d63ff
+	   # shows details about tags
+ 	git log --tags --show-notes --simplify-by-decoration --pretty="format:%ai %d %s"
+ 	   # shows list of branches with details
+ 	git branch -avv  
 
 ## To make a change log
 
