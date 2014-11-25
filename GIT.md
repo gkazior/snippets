@@ -187,6 +187,10 @@ Or a lot of changes to compare and merge.
        git checkout master
        git merge --squash branch -m "super commit"
 
+## Refactoring
+
+        git branch -m old_name new_name    # rename a branch
+
 ## Revert
 
 	git revert HEAD
