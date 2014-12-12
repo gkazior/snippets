@@ -137,6 +137,11 @@ Or a lot of changes to compare and merge.
 	git log --pretty=format:'%s' --graph         >> CHANGELOG.md
 	git log --pretty=format:'%s' --graph |  uniq >> CHANGELOG.md
 
+## Tagging
+
+	git tag -l "v1.1*" # list of tags 
+	git tag -a v1.4 -m 'version 1.4 release'
+
 ## To see the date wise tag history
 	
 	git log --tags --simplify-by-decoration --pretty="format:%ai %d"
