@@ -5,6 +5,11 @@
         # Use -DskipTests ex.
         mvn install -DskipTests
 
+## How to download sources when project is generated?
+
+        mvn idea:idea       -DdownloadSources=true -DdownloadJavadocs=true
+        mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true
+
 ## How to build the project offline?
 
         # Use the -o option
