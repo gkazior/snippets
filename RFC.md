@@ -13,6 +13,14 @@
 * [rfc6750 OAuth2 Bearer token]              (http://tools.ietf.org/html/rfc6750)
 * [rfc6819 OAuth2 Threat model]              (https://tools.ietf.org/html/rfc6819)
 
+## OpenID Connect 
+
+* [Spec] (http://openid.net/specs/openid-connect-basic-1_0.html)
+
+## OAuth and Ms
+
+* [Ms Azure]  (http://blogs.technet.com/b/ad/archive/2014/09/09/openid-connect-and-oauth-2-0-support-in-azure-active-directory-has-ga-d.aspx)
+* [Adal]      (https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 
 ## Html 2
 
