@@ -7,6 +7,7 @@
 * [rfc2617 http basic authentication scheme] (http://tools.ietf.org/html/rfc2617)
 * [rfc2818 http over TLS]                    (http://tools.ietf.org/html/rfc2818)
 * [rfc3986 Uri spec]                         (http://www.ietf.org/rfc/rfc3986.txt)
+* [rfc4120 Kerberos]                         (http://www.ietf.org/rfc/rfc4120.txt)
 * [rfc4627 JSON Format]                      (http://www.ietf.org/rfc/rfc4627.txt)
 * [rfc6749 OAuth2]                           (http://tools.ietf.org/html/rfc6749)
 * [rfc6750 OAuth2 Bearer token]              (http://tools.ietf.org/html/rfc6750)
