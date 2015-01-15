@@ -3,6 +3,7 @@
 ## Links
 
 * [rfc2119 What *should* means]              (http://tools.ietf.org/html/rfc2119)
+* [rfc3552 Guidelines for Writing RFC Text on Security Considerations] (https://tools.ietf.org/html/rfc3552)
 * [rfc2616 HTTP/1.1]                         (http://tools.ietf.org/html/rfc2616)
 * [rfc2617 http basic authentication scheme] (http://tools.ietf.org/html/rfc2617)
 * [rfc2818 http over TLS]                    (http://tools.ietf.org/html/rfc2818)
@@ -27,6 +28,11 @@
 * [Spec] https://http2.github.io/http2-spec
 * [rfc2616 Cons ] https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
 
+## kerberos 
+
+* [rfc4120 The Kerberos Network Authentication Service (V5)] (https://tools.ietf.org/html/rfc4120)
+* [rfc1510 The Kerberos Network Authentication Service (V5)] (https://tools.ietf.org/html/rfc1510)
+* [rfc4559 SPNEGO-based Kerberos and NTLM HTTP Authentication in Microsoft Windows] (https://tools.ietf.org/html/rfc4559)
 
 ## CAS
 
