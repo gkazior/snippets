@@ -3,11 +3,14 @@
 
 ## References
 
-http://stackoverflow.com/questions/294167/what-are-the-most-useful-intellij-idea-keyboard-shortcuts
-http://www.jetbrains.com/idea/docs/ReferenceCard70_mac.pdf
-http://www.jetbrains.com/idea/documentation/index.jsp
-http://www.c2.com/cgi/wiki?IntellijIdeaKeyboardShortcuts
+- http://stackoverflow.com/questions/294167/what-are-the-most-useful-intellij-idea-keyboard-shortcuts
+- https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf
+- http://www.jetbrains.com/idea/documentation/index.jsp
+- http://www.c2.com/cgi/wiki?IntellijIdeaKeyboardShortcuts
 
+## Cheat sheet for web storm
+
+- https://www.jetbrains.com/webstorm/documentation/WebStorm_ReferenceCard_70.pdf
 
 ## My keys
 
