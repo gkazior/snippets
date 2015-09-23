@@ -17,7 +17,8 @@
 * [Git wiki]              (https://git.wiki.kernel.org/index.php/Installation)
 * [Git real game]         (http://gitreal.codeschool.com/levels/1)
 * [Learn git branching]   (http://pcottle.github.io/learnGitBranching/)
- 
+* [Detached head]         (http://gitolite.com/detached-head.html)
+
 ## Installation
 
 [See help@github](https://help.github.com/articles/set-up-git)
