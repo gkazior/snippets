@@ -28,6 +28,19 @@
  * [Course: Functional Programming Principles in Scala] (http://www.coursera.org/course/progfun)
  * [Course: Principles of Reactive Programming ]        (http://www.coursera.org/course/reactive)
 
+## sbt spells
+
+    # To enable debugging: enable java debug on standard IntelliJ Idea port 
+    set SBT_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+    sbt run
+
+    # to enable offline mode in interactive mode
+    # more on: http://alvinalexander.com/scala/setting-putting-sbt-into-offline-mode-no-wifi
+    set offline := true
+    
+    # to start sbt in offline mode 
+    sbt "set offline := true" run
+
 ## enum in scala
 
     sealed case class State(name: String)
