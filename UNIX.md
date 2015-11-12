@@ -39,6 +39,14 @@
 |  netstat -tulpn     | Who is using my tcp/ip port  |
 |  ps -fu kazior      | Show me my processes (user is kazior)|
 
+# Network connection diagnosis
+
+    # ssl connection
+    openssl s_client -connect 132.10.1.193:443
+
+    # standard connection
+    telnet 132.10.1.193 80
+
 # links
 
 * [Error codes]  http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status

@@ -30,15 +30,15 @@
 
 ## sbt spells
 
-    # To enable debugging: enable java debug on standard IntelliJ Idea port 
+    # To enable debugging: enable java debug on standard IntelliJ Idea port
     set SBT_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
     sbt run
 
     # to enable offline mode in interactive mode
     # more on: http://alvinalexander.com/scala/setting-putting-sbt-into-offline-mode-no-wifi
     set offline := true
-    
-    # to start sbt in offline mode 
+
+    # to start sbt in offline mode
     sbt "set offline := true" run
 
 ## enum in scala
@@ -74,22 +74,10 @@
     }
 
 
-### Simple case class
+## Futures
 
+    import scala.concurrent.{ future, promise }
+    import scala.concurrent.ExecutionContext.Implicits.global
 
-    sealed trait Breed
-    object terrier extends Breed
-    object spaniel extends Breed
-    case class Dog(name: String, breed: Breed)
-    val myDog = Dog("spider", terrier)                
-    
-    def whenYouSee(dog: Dog) = {
-      dog match {
-        case myDog            => "Oh my dog"
-        case Dog("spider", _) => "Spider"
-      }
-    }                                                 
-    // myDog is not a value but a matched variable
-    val whatIsee = whenYouSee(Dog("sharik", terrier))//> whatIsee  : String = Oh my dog
 
 
