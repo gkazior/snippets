@@ -34,6 +34,14 @@
 	git remote add origin git@github.com:gkazior/snippets.git
 	git push -u origin master
 
+## git config
+    
+    # after http://stevenharman.net/git-pull-with-automatic-rebase
+    git config branch.autosetuprebase always
+    # in .gitconfig it is 
+    [branch]
+      autosetuprebase = always
+
 ## Crlf: Which is better MS or UNIX?
 By default git will replace EOL according to current env. To disable it call the following:
 
