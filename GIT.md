@@ -19,6 +19,11 @@
 * [Learn git branching]   (http://pcottle.github.io/learnGitBranching/)
 * [Detached head]         (http://gitolite.com/detached-head.html)
 
+## Semantic versioning must read
+
+ * [http://semver.org/] 
+ * [http://nvie.com/posts/a-successful-git-branching-model/] 
+
 ## Installation
 
 [See help@github](https://help.github.com/articles/set-up-git)
