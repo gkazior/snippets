@@ -41,6 +41,11 @@
     # to start sbt in offline mode
     sbt "set offline := true" run
 
+## Exceptions
+
+  * To catch or not to catch (https://www.sumologic.com/2014/05/05/why-you-should-never-catch-throwable-in-scala/)
+  * To catch or not to catch (https://tersesystems.com/2012/12/27/error-handling-in-scala/)
+
 ## enum in scala
 
     sealed case class State(name: String)
@@ -62,7 +67,7 @@
 
 
 
-## pattern matching
+## Pattern matching
 
 ### simple example
 
@@ -73,11 +78,21 @@
      case Some(value) => println(s"I have found [$value]")
     }
 
+## Iteration
+
+### over list
+
+    val l = List("a","b","c")
+    l foreach {println(_)}
+    l map     {println(_)}
+
+### for int
+    for (i <- 0 to 5) {println(i)}
+
 
 ## Futures
 
-    import scala.concurrent.{ future, promise }
-    import scala.concurrent.ExecutionContext.Implicits.global
+    Future basics (https://gist.github.com/gkazior/a97b47dc5dc081e483a5)
 
 
 

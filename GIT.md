@@ -21,8 +21,8 @@
 
 ## Semantic versioning must read
 
- * [http://semver.org/] 
- * [http://nvie.com/posts/a-successful-git-branching-model/] 
+ * [http://semver.org/]
+ * [http://nvie.com/posts/a-successful-git-branching-model/]
 
 ## Installation
 
@@ -40,10 +40,10 @@
 	git push -u origin master
 
 ## git config
-    
+
     # after http://stevenharman.net/git-pull-with-automatic-rebase
     git config branch.autosetuprebase always
-    # in .gitconfig it is 
+    # in .gitconfig it is
     [branch]
       autosetuprebase = always
 
@@ -144,7 +144,7 @@ Or a lot of changes to compare and merge.
 	   # shows details about tags
  	git log --tags --show-notes --simplify-by-decoration --pretty="format:%ai %d %s"
  	   # shows list of branches with details
- 	git branch -avv  
+ 	git branch -avv
 
 ## To make a change log
 
@@ -153,11 +153,11 @@ Or a lot of changes to compare and merge.
 
 ## Tagging
 
-	git tag -l "v1.1*" # list of tags 
+	git tag -l "v1.1*" # list of tags
 	git tag -a v1.4 -m 'version 1.4 release'
 
 ## To see the date wise tag history
-	
+
 	git log --tags --simplify-by-decoration --pretty="format:%ai %d"
 	git log --date-order --graph --tags --simplify-by-decoration --pretty=format:'%ai %h %d'
 	git log --decorate=full --all --pretty=format:'%h %d %s %cr %ae' --abbrev-commit|grep 'refs/tags'
@@ -219,10 +219,10 @@ Or a lot of changes to compare and merge.
 
 	git rev-parse HEAD                 # print the current hash (long)
 	last_commit=$(git rev-parse HEAD)  # the same - set the variable
-	
+
 	git rev-parse --short=8 HEAD       # print the current hash (only 8 chars)
 	git symbolic-ref -q --short HEAD   # print the current branch name
-	
+
 	git rev-parse HEAD~2               # print the hash of two commits back
 	git reset --hard HEAD~2            # reset - go back two commits back
 
@@ -246,11 +246,11 @@ Or a lot of changes to compare and merge.
         # Merges any changes fetched into your working files
 
 ## to work with feature branch
-	
+
 	git checkout master                # checkout the base version
 	git branch -b TICKET-123_TheName   # create a branch and checkout
 	# do the work, test, and finally
-	git push origin TICKET-123_TheName # push the feature branch to perform continues integration 
+	git push origin TICKET-123_TheName # push the feature branch to perform continues integration
 
 ## push multiple branches at once
 
@@ -285,11 +285,22 @@ or apply with standard patch command:
 
 	patch -b  -p1 < 0001-manual-backport-of-dev-changes.patch
 
+## git grep
+
+
+        git grep  'Tenant'  branchName --  '*.conf'
+        git rev-list --all | (while read rev; do git grep -e <regexp> $rev; done)
+        git branch --list | grep '7.1.9' | (while read rev; do git grep 'Tenant' $rev -- '*.conf'; done)
+        git rev-list --grep='7.1.9.*' --branches | (while read rev; do git grep 'Tenant' $rev -- '*.conf'; done)
+        git log --author=kazior --since=1.month
+
+        [See also] (http://travisjeffery.com/b/2012/02/search-a-git-repo-like-a-ninja/)
+
 ## empty folders
 
 Git cannot keep empty folders, if you still want to keep the folders, put the .gitkeep empty file into the folder.
-	
-	touch .gitkeep 
+
+	touch .gitkeep
 
 ## Other stuff
 
