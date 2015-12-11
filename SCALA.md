@@ -92,7 +92,7 @@
 
 ## Futures
 
-    Future basics (https://gist.github.com/gkazior/a97b47dc5dc081e483a5)
+*  [Future basics in my gist] (https://gist.github.com/gkazior/a97b47dc5dc081e483a5)
 
 
 
