@@ -20,9 +20,25 @@
 
   * after (http://arxiv.org/pdf/0911.2899v3.pdf)
 
+## NLP
+    SWIPl NLP (http://www.swi-prolog.org/pldoc/doc_for?object=section(%27packages/nlp.html%27)
+
+    ?- porter_stem("going", X).
+    X = go.
+
+    tokenize_atom("I'am going to school", X).
+    X = ['I', '\'', am, going, to, school].
+
+    atom_to_stem_list("I'am going to school", X).
+    X = [i, am, go, to, school].
+
+
 
 ## Tests
 
+## Command line
+
+    swipl -s file.pl -g "main(3)." -t halt. > results.txt
 
 # Links
 
