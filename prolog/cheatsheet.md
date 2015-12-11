@@ -23,6 +23,9 @@
 
 ## Tests
 
+## Command line
+
+    swipl -s file.pl -g "main(3)." -t halt. > results.txt
 
 # Links
 
