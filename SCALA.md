@@ -78,6 +78,11 @@
      case Some(value) => println(s"I have found [$value]")
     }
 
+## Code style
+
+  * Documentation (https://gist.github.com/gkazior/dc1e8f48282afdad4e24)
+
+
 ## Iteration
 
 ### over list
