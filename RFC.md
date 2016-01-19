@@ -11,6 +11,7 @@
 * [rfc3986 Uri spec]                           (http://www.ietf.org/rfc/rfc3986.txt)
 * [rfc4120 Kerberos]                           (http://www.ietf.org/rfc/rfc4120.txt)
 * [rfc4627 JSON Format]                        (http://www.ietf.org/rfc/rfc4627.txt)
+* [rfc5280 X.509 certs]                        (http://www.ietf.org/rfc/rfc5280.txt)
 * [rfc6749 OAuth2]                             (http://tools.ietf.org/html/rfc6749)
 * [rfc6750 OAuth2 Bearer token]                (http://tools.ietf.org/html/rfc6750)
 * [rfc6819 OAuth2 Threat model]                (https://tools.ietf.org/html/rfc6819)
