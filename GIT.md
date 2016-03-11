@@ -39,6 +39,15 @@
 	git remote add origin git@github.com:gkazior/snippets.git
 	git push -u origin master
 
+## git config on startup
+
+	git config --global user.email "gkazior@interia.pl"
+	git config --global user.name "gkazior"
+   	git config --global core.autocrlf false
+	git config --global branch.autosetuprebase always
+
+	git config --global --list
+
 ## git config
 
     # after http://stevenharman.net/git-pull-with-automatic-rebase
