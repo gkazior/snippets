@@ -45,6 +45,7 @@
 	git config --global user.name "gkazior"
    	git config --global core.autocrlf false
 	git config --global branch.autosetuprebase always
+	git config --global push.default simple	
 
 	git config --global --list
 
