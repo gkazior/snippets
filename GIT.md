@@ -156,6 +156,12 @@ Or a lot of changes to compare and merge.
  	   # shows list of branches with details
  	git branch -avv
 
+## git diff
+
+	git diff branch1 branch2 -- ./conf/application.conf
+	git diff branch1:file1 branch2:file2
+	git diff HEAD^ HEAD
+
 ## To make a change log
 
 	git log --pretty=format:'%s' --graph         >> CHANGELOG.md
