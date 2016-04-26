@@ -41,6 +41,11 @@
     # to start sbt in offline mode
     sbt "set offline := true" run
 
+## Command line spells
+
+    # command line for running remote JVM
+    -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+
 ## Exceptions
 
   * To catch or not to catch (https://www.sumologic.com/2014/05/05/why-you-should-never-catch-throwable-in-scala/)
