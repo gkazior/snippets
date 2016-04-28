@@ -226,6 +226,10 @@ Or a lot of changes to compare and merge.
 
         git branch -m old_name new_name    # rename a branch
 
+## Check status of branches - if update is needed
+
+	git remote -v update
+
 ## Revert
 
 	git revert HEAD
