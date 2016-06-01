@@ -1,4 +1,4 @@
-    
+# First tutorial    
     %sh
     wget http://en.wikipedia.org/wiki/Hortonworks
     
@@ -17,3 +17,44 @@
     val filtered = file1.filter(_.length > 0)
     val count = filtered.count
     println(s"Found $count")
+
+
+
+# Tutorial on zeppelin
+
+    %sh
+    rm ~/bank.zip
+    rm -rf  ~/data
+    cd ~
+    wget http://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank.zip
+    mkdir data
+    unzip bank.zip -d data
+    rm bank.zip
+
+    hadoop fs -put  ~/data/bank-full.csv .
+    hadoop fs -ls -h bank-full.csv
+    
+    
+    //import sys.process._
+    // sc is an existing SparkContext.
+    val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+
+
+    val bankText = sc.textFile("bank-full.csv")
+
+    case class Bank(age: Integer, job: String, marital: String, education: String, balance: Integer)
+
+    val bank = bankText.map(s => s.split(";")).filter(s => s(0) != "\"age\"").map(
+        s => Bank(s(0).toInt, 
+            s(1).replaceAll("\"", ""),
+            s(2).replaceAll("\"", ""),
+            s(3).replaceAll("\"", ""),
+            s(5).replaceAll("\"", "").toInt
+        )
+    )
+    // toDF() works only in spark 1.3.0.
+    // For spark 1.1.x and spark 1.2.x,
+    // use below instead:
+    // bank.registerTempTable("bank"
+    bank.toDF().registerTempTable("bank")
+
