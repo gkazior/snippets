@@ -72,3 +72,18 @@
     where marital="${marital=single,single|divorced|married}" 
     group by age 
     order by age
+    
+    %sql 
+    /* on the same dataset average age depending on marital ;-) */
+    select marital, avg(age) avg_age 
+    from bank 
+    group by marital 
+    order by avg_age desc
+    /**
+    Gives:
+    marital	avg_age
+    divorced	45.78298444401767
+    married	    43.40809877269053
+    single	    33.7034401876466
+    */
+    
