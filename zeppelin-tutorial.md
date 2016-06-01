@@ -58,3 +58,17 @@
     // bank.registerTempTable("bank"
     bank.toDF().registerTempTable("bank")
 
+
+    %sql 
+    select age, count(1) value, sum(balance)
+    from bank 
+    where age < 50 
+    group by age 
+    order by age
+    
+    %sql 
+    select age, count(1) value 
+    from bank 
+    where marital="${marital=single,single|divorced|married}" 
+    group by age 
+    order by age
