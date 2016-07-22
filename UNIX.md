@@ -36,8 +36,9 @@
 
 |  How                | What |
 |---------------------|---------------------|
-|  netstat -tulpn     | Who is using my tcp/ip port  |
-|  ps -fu kazior      | Show me my processes (user is kazior)|
+|  netstat -tulpn     | Who is using my tcp/ip port                |
+|  netstat -anobv     |  Who is using my tcp/ip port on WINDOWS    |
+|  ps -fu kazior      | Show me my processes (user is kazior)      |
 
 # Network connection diagnosis
 
