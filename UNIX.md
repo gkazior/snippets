@@ -10,6 +10,11 @@
 
         rm -f the_pipe
 
+## trap
+
+        TMPFILE=$(tempfile)
+        trap 'echo "removing $TMPFILE"; rm -f $TMPFILE' INT TERM EXIT
+
 # Linux distro
 
         # Determine what distribution I have
