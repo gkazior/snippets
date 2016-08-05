@@ -15,6 +15,20 @@
         TMPFILE=$(tempfile)
         trap 'echo "removing $TMPFILE"; rm -f $TMPFILE' INT TERM EXIT
 
+## sh -e for clean code
+
+        #!/bin/sh -e
+
+        # If the command may fail and it is OK write it explicitily!
+        false || true
+
+        echo "false || true will not fail!"
+
+        # false returns and error
+        false
+
+        echo "false will break the flow because of -e flag! When run without the flag it does not break!"
+
 # Linux distro
 
         # Determine what distribution I have
