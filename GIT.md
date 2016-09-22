@@ -160,7 +160,10 @@ Or a lot of changes to compare and merge.
 
 	git diff branch1 branch2 -- ./conf/application.conf
 	git diff branch1:file1 branch2:file2
+	# compare current with previous
 	git diff HEAD^ HEAD
+	# show only changed lines, do not show filenames
+	git diff -U0 |  grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)'  
 
 ## To make a change log
 
