@@ -59,6 +59,37 @@
 |  netstat -anobv     |  Who is using my tcp/ip port on WINDOWS    |
 |  ps -fu kazior      | Show me my processes (user is kazior)      |
 
+# json in shell
+
+    # thanks to http://stedolan.github.com/jq
+    > cat file.json
+    {
+        "simple": {"property": "value 01"},
+        "items": [{"name": "item 1"},
+                  {"name": "item 2"},
+                  {"name": "item 3"}]
+    }
+
+    > json .items[1].name  file.json
+    "item 2"
+    > json .simple.property  /home/dps/file.json
+    "value 01"
+    > json .simple.property  /home/dps/file.json |  tr -d '"'
+    value 01
+
+    # more complex
+    CONFIG="$(cat file.json)"
+
+    NUMBER_OF_ITEMS="$(echo $CONFIG | json '.items | length')"
+    i=0
+    while [ $i -lt $NUMBER_OF_ITEMS ]; do
+        NAME="$(echo $CONFIG | json .items[$i].name | tr -d '"')"
+        echo "Found: $NAME"
+        i=$[$i+1]
+    done
+
+
+
 # Network connection diagnosis
 
     # ssl connection
