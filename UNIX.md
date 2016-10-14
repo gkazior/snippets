@@ -77,7 +77,8 @@
     > json .simple.property  /home/dps/file.json |  tr -d '"'
     value 01
 
-    # more complex
+    # more complex
+
     CONFIG="$(cat file.json)"
 
     NUMBER_OF_ITEMS="$(echo $CONFIG | json '.items | length')"
@@ -102,3 +103,8 @@
 
 * [Error codes]  http://zenit.senecac.on.ca/wiki/index.php/BASH_Exit_Status
 * [BAsh hackers] http://wiki.bash-hackers.org/start
+
+# putty tunnel from windows
+
+    # through jump to dest host
+    start C:\app\putty\putty.exe 10.131.2.12 -L 1521:10.131.2.12:1521 -l username -pw password
