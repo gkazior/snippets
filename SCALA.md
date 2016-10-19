@@ -40,6 +40,10 @@
 
     # to start sbt in offline mode
     sbt "set offline := true" run
+    
+    # to generate maven pom
+    # see the generated pom in the target 
+    sbt make-pom    
 
 ## Command line spells
 
