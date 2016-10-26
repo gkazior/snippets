@@ -66,23 +66,35 @@
 
 ## enum in scala
 
-    sealed case class State(name: String)
-    object begin       extends State("begin")
-    object inTheMiddle extends State("in the middle")
-    object end         extends State("end")
+    sealed trait State
 
-    object processor {
+    object State {
+      sealed protected abstract class StateImpl(name: String) extends State {
+          override def toString = s"State($name)"
+      }      
+      case object Begin extends StateImpl("begin")
+      case object InTheMiddle extends StateImpl("in the middle")
+      case object End extends StateImpl("end")
+      
+      def values = Seq(Begin, InTheMiddle, End)
+    }
+
+
+    object Processor {
       def processState(state: State) {
         state match {
-          case begin       => println(s"Great!    state: $begin")
-          case end         => println(s"Was nice! state: $end")
-          case inTheMiddle => println(s"Working!  state: $inTheMiddle")
+          case State.Begin => println(s"Great!    state: $State.Begin")
+          case State.End => println(s"Was nice! state: $State.End")
+          case State.InTheMiddle => println(s"Working!  state: $State.InTheMiddle")
         }
       }
+      def main(args: Array[String]) {
+        Processor.processState(State.Begin)
+        Processor.processState(State.End)
+        
+        State.values foreach println
+      }
     }
-    processor.processState(begin)                   //> Great!    state: State(begin)
-
-
 
 
 ## Pattern matching
