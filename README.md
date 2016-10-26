@@ -12,3 +12,7 @@ Ascii diagrams
 * [asciiflow] (http://asciiflow.com/)
 * hack discussion [1] (https://news.ycombinator.com/item?id=2651745)
 * stack discussion [2] (http://unix.stackexchange.com/questions/126630/creating-diagrams-in-ascii)
+
+Nice programs
+
+* X Server for Microsoft Windows [XMing] (http://www.straightrunning.com/xmingnotes/IDH_DISPLAY.htm)
