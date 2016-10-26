@@ -22,6 +22,15 @@
 *  [ScoopIt](http://www.scoop.it/t/playframework)
 *  [Send email in play] (http://blog.knoldus.com/2014/03/15/adding-an-email-sending-functionality-in-play-using-scala/)
 
+## Scala and JVM options
+* [StandardScalaSettings.scala]  (https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/StandardScalaSettings.scala)
+* [AllSettings.scala]  (https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/ScalaSettings.scala)
+* [JVM options] (http://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
+* [Troubleshooting] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/index.html)
+* [Postmortem] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr023.html#BABEFHCI)
+* [jmap] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html#BABGAFEG)
+* [jstack] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html#BABFCHDE)
+
 ## Nice to look at
 
 * [Coursera] (http://www.coursera.org/)
