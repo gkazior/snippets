@@ -108,3 +108,11 @@
 
     # through jump to dest host
     start C:\app\putty\putty.exe 10.131.2.12 -L 1521:10.131.2.12:1521 -l username -pw password
+
+# JAVA_HOME on windows 
+
+    REM Will not work when path constains spaces (it is a just punishment for spaces)
+    set JAVA_HOME=c:\app\java\jdk1.8.0_25\
+    set PATH=%JAVA_HOME%\bin;%PATH%
+    echo %PATH%
+    java -version
