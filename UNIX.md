@@ -59,6 +59,11 @@
 |  netstat -anobv     |  Who is using my tcp/ip port on WINDOWS    |
 |  ps -fu kazior      | Show me my processes (user is kazior)      |
 
+# binary compatibility verification
+
+    # prepare verification hash
+    find . -type f -print | sort | xargs md5sum > files-`date "+%Y-%m-%d_%H-%M-%S"`
+    
 # json in shell
 
     # thanks to http://stedolan.github.com/jq
