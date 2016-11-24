@@ -1,5 +1,39 @@
 # Top ten commands
 
+## simple command and processing text
+
+        #!/bin/bash
+        
+        true=0
+        false=1
+
+        VERSION=7.3.7.0-8-9ad3650
+        echo ${VERSION:0:3}                       # will print 7.3
+        version=`echo ${VERSION} | cut -d- -f1`   # version will be 7.3.7.0
+        buildNo=`echo ${VERSION} | cut -d- -f2`   # buildNo will be 8
+        
+        # procedure which push and pop the directory
+        pushd ()
+        {
+            command pushd "$@" > /dev/null
+        }
+
+        popd ()
+        {
+            command popd "$@" > /dev/null
+        }
+
+        if [[ "x${VAR}" = "x" ]]; then
+            echo -e "\nError. VAR is empty.\n\n"
+            print_usage
+            exit $false
+        fi
+
+        if [[ -f ${configfile} ]]; then
+            . ${configfile}
+        fi
+    
+        
 ## pipes
 
         mknod the_pipe p
