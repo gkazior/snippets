@@ -155,3 +155,13 @@
     set PATH=%JAVA_HOME%\bin;%PATH%
     echo %PATH%
     java -version
+
+# JAVA_HOME on linux
+
+    JAVA_HOME=/opt/oracle-jdk-bin-1.8/
+    PATH=$JAVA_HOME/bin:$PATH
+    java -version
+
+# jar listing
+
+    jar tvf the.ear | grep junit  # search junit in the.ear
