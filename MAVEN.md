@@ -7,7 +7,7 @@
         
 ## How to disable colors for specs2
 
-        mvn clean test -Dspecs2.commandline=nocolor
+        mvn clean install -Dspecs2.commandline=nocolor
 
 ## How to download sources when project is generated?
 
