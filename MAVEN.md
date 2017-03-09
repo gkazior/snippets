@@ -3,7 +3,7 @@
 ## How to skip the tests?
 
         # Use -DskipTests ex.
-        mvn install -DskipTests
+        mvn clean install -DskipTests
         
 ## How to disable colors for specs2
 
