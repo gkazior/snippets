@@ -165,3 +165,15 @@
 # jar listing
 
     jar tvf the.ear | grep junit  # search junit in the.ear
+
+# other
+
+## looping
+
+    #!/bin/bash
+    for i in {1..10}
+    do
+        echo $i
+    done
+
+
