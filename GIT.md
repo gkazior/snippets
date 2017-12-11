@@ -237,6 +237,11 @@ Or a lot of changes to compare and merge.
 
 	git remote -v update
 
+## Check tags and branches on the current commit
+
+	git tag    -l --points-at HEAD
+	git branch -l --points-at HEAD
+
 ## Revert
 
 	git revert HEAD
