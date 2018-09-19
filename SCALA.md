@@ -53,6 +53,11 @@
     # to generate maven pom
     # see the generated pom in the target 
     sbt make-pom    
+    
+    # to re-run with -deprecation for detail
+    sbt -mem 2048
+    set scalacOptions in ThisBuild ++= Seq("-unchecked", "-deprecation", "-feature")
+    compile
 
 ## Command line spells
 
