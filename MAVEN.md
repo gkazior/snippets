@@ -31,12 +31,18 @@
         MAVEN_OPTS="-Xmx2000m -XX:MaxPermSize=512m"
 
 
-## Working with shanpshots?
+## Working with shapshots?
 
         Try -U flag which updates shanpshots you have in your local repo.
 
         mvn -U install
         mvn -U clean install -DskipTests
+
+## Analyze dependencies for a given library
+
+        ## --batch-mode for no colors which are hard to read because of control characters 
+        ## --includes since we want only one dependency
+        mvn --batch-mode dependency:tree -Dverbose -Dincludes="com.ning:async-http-client" > output.tree.txt
 
 
 ## Why not to read the command line help?
