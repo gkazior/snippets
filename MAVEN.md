@@ -44,6 +44,9 @@
         ## --includes since we want only one dependency
         mvn --batch-mode dependency:tree -Dverbose -Dincludes="com.ning:async-http-client" > output.tree.txt
 
+## Continue compilation from the failed module 
+        
+        mvn clean install -Dtests.skip=true -rf :failedProject
 
 ## Why not to read the command line help?
 
