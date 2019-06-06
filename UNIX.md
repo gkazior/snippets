@@ -162,6 +162,13 @@
     PATH=$JAVA_HOME/bin:$PATH
     java -version
 
+# delete all messages with mail
+
+    # after https://stackoverflow.com/questions/7076186/how-do-i-purge-a-linux-mail-box-with-huge-number-of-emails
+    mail -N
+    d *
+    quit
+
 # jar listing
 
     jar tvf the.ear | grep junit  # search junit in the.ear
