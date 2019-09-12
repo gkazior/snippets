@@ -183,11 +183,16 @@
         echo $i
     done
 
-## serving local files with oneliner
+## serving local files with oneliner using python http server
 
-Python 2.x
-$ python -m SimpleHTTPServer 8000
+    # Python 2.x
+    $ python -m SimpleHTTPServer 8000
 
-Python 3.x
-$ python -m http.server 8000
+    # Python 3.x
+    $ python -m http.server 8000
 
+## globstar instead of find
+
+    find -type f -name "*.py" -exec wc -l {} \;
+    shopt -s globstar
+    wc -l **/*.py
