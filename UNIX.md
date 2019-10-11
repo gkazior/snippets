@@ -3,7 +3,7 @@
 ## simple command and processing text
 
         #!/bin/bash
-        
+
         true=0
         false=1
 
@@ -11,7 +11,7 @@
         echo ${VERSION:0:3}                       # will print 7.3
         version=`echo ${VERSION} | cut -d- -f1`   # version will be 7.3.7.0
         buildNo=`echo ${VERSION} | cut -d- -f2`   # buildNo will be 8
-        
+
         # procedure which push and pop the directory
         pushd ()
         {
@@ -32,8 +32,8 @@
         if [[ -f ${configfile} ]]; then
             . ${configfile}
         fi
-    
-        
+
+
 ## pipes
 
         mknod the_pipe p
@@ -87,17 +87,18 @@
 
 # Nice oneliners
 
-|  How                | What |
-|---------------------|---------------------|
-|  netstat -tulpn     | Who is using my tcp/ip port                |
-|  netstat -anobv     |  Who is using my tcp/ip port on WINDOWS    |
-|  ps -fu kazior      | Show me my processes (user is kazior)      |
+|  How                          | What                                       |
+|-------------------------------|--------------------------------------------|
+|  netstat -tulpn               | Who is using my tcp/ip port                |
+|  netstat -anobv               | Who is using my tcp/ip port on WINDOWS     |
+|  ps -fu kazior                | Show me my processes (user is kazior)      |
+|  ps -eo pid,lstart,cmd        | When my process started                    |
 
 # binary compatibility verification
 
     # prepare verification hash
     find . -type f -print | sort | xargs md5sum > files-`date "+%Y-%m-%d_%H-%M-%S"`
-    
+
 # json in shell
 
     # thanks to http://stedolan.github.com/jq
@@ -148,7 +149,7 @@
     # through jump to dest host
     start C:\app\putty\putty.exe 10.131.2.12 -L 1521:10.131.2.12:1521 -l username -pw password
 
-# JAVA_HOME on windows 
+# JAVA_HOME on windows
 
     REM Will not work when path constains spaces (it is a just punishment for spaces)
     set JAVA_HOME=c:\app\java\jdk1.8.0_25\
