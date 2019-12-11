@@ -94,6 +94,14 @@
 |  ps -fu kazior                | Show me my processes (user is kazior)      |
 |  ps -eo pid,lstart,cmd        | When my process started                    |
 
+
+# xargs oneliners
+
+    # IntelliJ Idea runs AppMainV2 application for normal run, and actual main for debug session
+    jps -l | grep AppMainV2 | awk '{print $1}' | xargs -n1 jconsole
+    jps -l | grep AppMainV2 | awk '{print $1}' | xargs -n1 jstack > j8
+
+
 # binary compatibility verification
 
     # prepare verification hash
