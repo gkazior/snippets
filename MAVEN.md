@@ -48,6 +48,10 @@
         
         mvn clean install -Dtests.skip=true -rf :failedProject
 
+## Speed up compilation with zinc
+
+        zinc -J-Xmx4g -nailed -start
+
 ## Why not to read the command line help?
 
         usage: mvn [options] [<goal(s)>] [<phase(s)>]
