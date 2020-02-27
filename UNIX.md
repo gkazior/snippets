@@ -205,3 +205,12 @@
     find -type f -name "*.py" -exec wc -l {} \;
     shopt -s globstar
     wc -l **/*.py
+
+## simple string operations
+
+    fullfile=/home/zee/app/test.sh 
+    filename="${fullfile##*/}"
+    echo "$filename"                         # will print "test.sh"
+    echo "${filename%.*}"                    # will print "test"
+    echo "${filename##*.}"                   # will print "sh"
+
