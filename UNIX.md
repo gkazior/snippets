@@ -44,6 +44,9 @@
 
         rm -f the_pipe
 
+## grep        
+       grep --color=always forward -i -r * | less -R
+
 ## trap
 
         TMPFILE=$(tempfile)
