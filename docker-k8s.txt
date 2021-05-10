@@ -1,0 +1,92 @@
+## Mesos vs k8s vs
+
+https://www.baeldung.com/mesos-kubernetes-comparison
+
+Other Alternatives
+Kubernetes and Apache Mesos are quite powerful, but they are not the only systems in this space. There are quite several promising alternatives available to us. While we'll not go into their details, let's quickly list a few of them:
+
+Docker Swarm: Docker Swarm is an open-source clustering and scheduling tool for Docker containers. It comes with a command-line utility to manage a cluster of Docker hosts. It's restricted to Docker containers, unlike Kubernetes and Mesos.
+Nomad: Nomad is a flexible workload orchestrator from HashiCorp to manage any containerized or non-containerised application. Nomad enables declarative infrastructure-as-code for deploying applications like Docker container.
+OpenShift: OpenShift is a container platform from Red Hat, orchestrated and managed by Kubernetes underneath. OpenShift offers many features on top of what Kubernetes provide like integrated image registry, a source-to-image build,  a native networking solution, to name a few.
+
+## k8s basics
+
+Let's go through the major parts of this high-level architecture:
+
+Kubernetes Master: The master is responsible for maintaining the desired state of the cluster. It manages all nodes in the cluster. As we can see, the master is a collection of three processes:
+  kube-apiserver: This is the service that manages the entire cluster, including processing REST operations, validating and updating Kubernetes objects, performing authentication and authorization
+  kube-controller-manager: This is the daemon that embeds the core control loop shipped with Kubernetes, making the necessary changes to match the current state to the desired state of the cluster
+  kube-scheduler: This service watches for unscheduled pods and binds them to nodes depending upon requested resources and other constraints
+
+Kubernetes Nodes: The nodes in a Kubernetes cluster are the machines that run our containers. Each node contains the necessary services to run the containers:
+  kubelet: This is the primary node agent which ensures that the containers described in PodSpecs provided by kube-apiserver are running and healthy
+  kube-proxy: This is the network proxy running on each node and performs simple TCP, UDP, SCTP stream forwarding or round-robin forwarding across a set of backends
+  container runtime: This is the runtime where container inside the pods are run, there are several possible container runtimes for Kubernetes including the most widely used, Docker runtime
+
+Let's discuss some of the commonly used Kubernetes objects:
+  Pods: Pod is a basic unit of execution in Kubernetes and can consist of one or more containers, the containers inside a Pod are deployed on the same host
+  Deployment: Deployment is the recommended way to deploy pods in Kubernetes, it provides features like continuously reconciling the current state of pods with the desired state
+  Services: Services in Kubernetes provide an abstract way to expose a group of pods, where the grouping is based on selectors targetting pod labels
+There are several other Kubernetes objects which serve the purpose of running containers in a distributed manner effectively.
+
+## CSI
+https://github.com/container-storage-interface/spec
+
+
+## mini k3s
+
+https://www.reddit.com/r/kubernetes/comments/be0415/k3s_minikube_or_microk8s/
+
+Minikube
+Minikube can run on Windows and MacOS, because it relies on virtualization (e.g. Virtualbox) to deploy a kubernetes cluster in a Linux VM. You can also run minikube directly on linux with or without virtualization. It also has some developer-friendly features, like add-ons.
+
+Minikube is currently limited to a single-node Kubernetes cluster (for details, see this issue). Although, it is on their roadmap.
+
+Microk8s
+Disclaimer: of all the K8s offerings, I know the least about this one
+
+Microk8s is similar to minikube in that it spins up a single-node Kubernetes cluster with its own set of add-ons.
+
+Like minikube, microk8s is limited to a single-node Kubernetes cluster, with the added limitation of only running on Linux and only on Linux where snap is installed.
+
+K3s
+K3s runs on any Linux distribution without any additional external dependencies or tools. It is marketed by Rancher as a lightweight Kubernetes offering suitable for edge environments, IoT devices, CI pipelines, and even ARM devices, like Raspberry Pi's. K3s achieves its lightweight goal by stripping a bunch of features out of the Kubernetes binaries (e.g. legacy, alpha, and cloud-provider-specific features), replacing docker with containerd, and using sqlite3 as the default DB (instead of etcd). As a result, this lightweight Kubernetes only consumes 512 MB of RAM and 200 MB of disk space. K3s has some nice features, like Helm Chart support out-of-the-box.
+
+Unlike the previous two offerings, K3s can do multiple node Kubernetes cluster. However, due to technical limitations of SQLite, K3s currently does not support High Availability (HA), as in running multiple master nodes. The K3s team plans to address this in the future.
+
+Now, on to some honorary mentions...
+
+Kind
+Kind (Kubernetes-in-Docker), as the name implies, runs Kubernetes clusters in Docker containers. This is the official tool used by Kubernetes maintainers for Kubernetes v1.11+ conformance testing. It supports multi-node clusters as well as HA clusters. Because it runs K8s in Docker, kind can run on Windows, Mac, and Linux.
+
+Kind is optimized first and foremost for CI pipelines, so it may not have some of the developer-friendly features of other offerings.
+
+Desktop Docker
+Docker for Mac/Windows now ships with a bundled Kubernetes offering.
+
+However:
+
+Kubernetes versions are tightly coupled with the Docker version (i.e. Docker stable channel ships with K8s v1.10. If you want K8s v1.13, you need to switch to Docker edge channel).
+
+Not as easy to destroy and start a new K8s cluster. AFAIK, you would have to disable Kubernetes and re-enable it through the Docker desktop app preferences.
+
+K3d
+A new project that aims to bring K3s-in-Docker (similar to kind).
+
+They're still working through some issues, like exposing the right docker ports ...etc.
+
+Kubeadm
+The official CNCF tool for provisioning Kubernetes clusters in a variety of shapes and forms (e.g. single-node, multi-node, HA, self-hosted)
+
+Although this is the most man
+
+
+# Garden
+https://docs.garden.io/
+
+
+Garden is a developer tool that automates your workflows and makes developing and testing Kubernetes applications faster and easier than ever.
+Keep your development environment up-to-date as you code, and get rapid feedback.
+Develop and iterate as quickly with remote clusters as you do locally, and share development clusters with your team. With remote clusters you can even run Garden without Kubernetes or Docker installed on your machine!
+Start simple and grow complexity gradually as your needs evolve. Use simplified abstractions to start, and move to raw Kubernetes YAML, Helm, etc. only when you have to.
+Simplify your CI by running the same commands and configuration during development and testing—and use the same build and test caches!
