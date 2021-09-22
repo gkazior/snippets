@@ -28,3 +28,8 @@
       id 'com.savvasdalkitsis.module-dependency-graph' version '0.9'
       id 'com.bmuschko.docker-remote-api'
     } 
+
+##  gw tool
+
+    curl -fsSL https://github.com/gdubw/gng/releases/latest/download/gng-installer.sh -o gng-installer.sh
+    sudo bash ./gng-installer.sh
