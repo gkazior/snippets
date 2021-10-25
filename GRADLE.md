@@ -1,6 +1,6 @@
 # Gradle nice snippets 
 
-## addinig test sources from non-standard directory - manualTest 
+## adding test sources from non-standard directory - manualTest 
 
     sourceSets  {
         test {
@@ -33,3 +33,15 @@
 
     curl -fsSL https://github.com/gdubw/gng/releases/latest/download/gng-installer.sh -o gng-installer.sh
     sudo bash ./gng-installer.sh
+
+## ./gradlew test --continue
+
+    Will not start if they have already started.    
+    ./gradlew cleanTest test --no-build-cache --continue 
+    The will execute all
+
+    When you add gradlew... testReport
+    testReport generates one big test report
+    
+    So this may be best 
+    gw testReport --continue
