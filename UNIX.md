@@ -110,6 +110,11 @@
     # prepare verification hash
     find . -type f -print | sort | xargs md5sum > files-`date "+%Y-%m-%d_%H-%M-%S"`
 
+# find one liners
+    
+    # makes all *.dat files empty
+    for i in `find ./ -name "*.dat" -type f`; do > $i; done
+
 # json in shell
 
     # thanks to http://stedolan.github.com/jq
