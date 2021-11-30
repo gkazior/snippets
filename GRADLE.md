@@ -1,5 +1,15 @@
 # Gradle nice snippets 
 
+
+## basics
+
+    # build with fresh deps
+    ./gradlew build --refresh-dependencies
+  
+    # skip some tasks    
+    ./gradlew build -x test
+
+
 ## adding test sources from non-standard directory - manualTest 
 
     sourceSets  {
