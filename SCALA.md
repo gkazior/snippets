@@ -22,6 +22,12 @@
 *  [ScoopIt](http://www.scoop.it/t/playframework)
 *  [Send email in play] (http://blog.knoldus.com/2014/03/15/adding-an-email-sending-functionality-in-play-using-scala/)
 
+## Scala collections
+
+*  [docs](https://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html)
+*  [so cheatsheet](https://stackoverflow.com/questions/1722137/scala-2-8-collections-design-tutorial)
+*  [Odersky art](https://www.scala-lang.org/old/sites/default/files/sids/admin/Tue,%202010-07-20,%2010:39/collections.pdf)
+
 ## Scala and JVM options
 * [StandardScalaSettings.scala]  (https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/StandardScalaSettings.scala)
 * [AllSettings.scala]  (https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/ScalaSettings.scala)
