@@ -4,13 +4,20 @@
 
 * [Tutorials](http://docs.scala-lang.org/tutorials/)
 * [Cheat sheet](http://docs.scala-lang.org/cheatsheets/)
-* [Glossary] (http://docs.scala-lang.org/glossary/)
-* [Case classes] (http://docs.scala-lang.org/tutorials/tour/case-classes.html)
+* [Glossary](http://docs.scala-lang.org/glossary/)
+* [Case classes](http://docs.scala-lang.org/tutorials/tour/case-classes.html)
+* [Getting started](https://docs.scala-lang.org/getting-started/index.html)
+* [The path to enlightenment](https://www.scala-exercises.org/)
+
+## video
+
+* [Data structures] (https://www.youtube.com/playlist?list=PLLMXbkbDbVt8JLumqKj-3BlHmEXPIfR42)
+* [Problems] (https://www.youtube.com/playlist?list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO)
 
 ## Libraries
 
-* [Collections] (http://docs.scala-lang.org/overviews/collections/sets.html)
-* [Akka]        (http://doc.akka.io/docs/akka/2.1.4/)
+* [Collections](http://docs.scala-lang.org/overviews/collections/sets.html)
+* [Akka](http://doc.akka.io/docs/akka)
 
 ## Testing
 
@@ -22,26 +29,27 @@
 *  [ScoopIt](http://www.scoop.it/t/playframework)
 *  [Send email in play] (http://blog.knoldus.com/2014/03/15/adding-an-email-sending-functionality-in-play-using-scala/)
 
-## Scala collections
+## Scala collections v2
 
-*  [docs](https://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html)
-*  [so cheatsheet](https://stackoverflow.com/questions/1722137/scala-2-8-collections-design-tutorial)
-*  [Odersky art](https://www.scala-lang.org/old/sites/default/files/sids/admin/Tue,%202010-07-20,%2010:39/collections.pdf)
+* [architecture](https://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html)
+* [custom collection operations](https://docs.scala-lang.org/overviews/core/custom-collection-operations.html)
+* [so cheatsheet](https://stackoverflow.com/questions/1722137/scala-2-8-collections-design-tutorial)
+* [Odersky art](https://www.scala-lang.org/old/sites/default/files/sids/admin/Tue,%202010-07-20,%2010:39/collections.pdf)
 
 ## Scala and JVM options
-* [StandardScalaSettings.scala]  (https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/StandardScalaSettings.scala)
-* [AllSettings.scala]  (https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/ScalaSettings.scala)
-* [JVM options] (http://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
-* [Troubleshooting] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/index.html)
-* [Postmortem] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr023.html#BABEFHCI)
-* [jmap] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html#BABGAFEG)
-* [jstack] (http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html#BABFCHDE)
+* [StandardScalaSettings.scala](https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/StandardScalaSettings.scala)
+* [AllSettings.scala](https://github.com/scala/scala/blob/2f1b5259188698501dbc8430f63972bf7bc68154/src/compiler/scala/tools/nsc/settings/ScalaSettings.scala)
+* [JVM options](http://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
+* [Troubleshooting](http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/index.html)
+* [Postmortem](http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr023.html#BABEFHCI)
+* [jmap](http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html#BABGAFEG)
+* [jstack](http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html#BABFCHDE)
 
 ## Nice to look at
 
-* [Coursera] (http://www.coursera.org/)
- * [Course: Functional Programming Principles in Scala] (http://www.coursera.org/course/progfun)
- * [Course: Principles of Reactive Programming ]        (http://www.coursera.org/course/reactive)
+* [Coursera](http://www.coursera.org/)
+* [Course: Functional Programming Principles in Scala](http://www.coursera.org/course/progfun)
+* [Course: Principles of Reactive Programming ](http://www.coursera.org/course/reactive)
 
 ## sbt spells
 
@@ -138,7 +146,7 @@
 
 ## Futures
 
-*  [Future basics in my gist] (https://gist.github.com/gkazior/a97b47dc5dc081e483a5)
+*  [Future basics in my gist](https://gist.github.com/gkazior/a97b47dc5dc081e483a5)
 
 
 
