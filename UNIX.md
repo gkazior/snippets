@@ -92,6 +92,7 @@
 
 |  How                          | What                                       |
 |-------------------------------|--------------------------------------------|
+|  sudo ss -ltpn                | Who is using my port on Ubuntu             |
 |  netstat -tulpn               | Who is using my tcp/ip port                |
 |  netstat -anobv               | Who is using my tcp/ip port on WINDOWS     |
 |  ps -fu kazior                | Show me my processes (user is kazior)      |
