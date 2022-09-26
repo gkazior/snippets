@@ -34,6 +34,28 @@
         fi
 
 
+## less
+
+        # Keyboard
+        /pattern
+        n repeat previous search
+        N repeat previous search in reverse direction
+        g goto first line
+        Ng goto Nth line
+        G  goto last line
+        F  wait for input
+        ESC-F Like F, but as soon as a line is found which matches the
+              last search pattern, the terminal bell is rung and forward
+              scrolling stops
+        q  exit
+        h  help
+
+        # show line nubmers
+        less -N file.txt
+        
+        # watch for changes
+        less +F file.txt
+  
 ## pipes
 
         mknod the_pipe p
